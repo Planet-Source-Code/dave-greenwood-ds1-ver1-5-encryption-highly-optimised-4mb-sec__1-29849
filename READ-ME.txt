@@ -1,0 +1,49 @@
+
+--------------------------------------------
+----DIGITALLY SECURE ENCRYPTION READ ME ----
+----------------V1.5------------------------
+----Copyright David Greenwood 2001----------
+--------------------------------------------
+
+BRIEF:
+
+DS1 Encryption is ideally suited to Secure the Digital Transfer of Information on Public 
+Networks such as the Internet. 
+The DS1 Coding Technique can output 1,078,203,909,375 different Encrypted byte streams from just 
+one input stream. Therefore even if the same data is transmitted again it will not 
+look the same.
+
+TECHNIQUES USED:
+This is achieved by selecting 5 random bytes and adding them to the start of the byte 
+stream. The byte stream then undergoes CBC (Cipher Block Chaining),byte & bit level processing before being 
+outputted as 1 of the 1,078,203,909,375 different possible byte outputs. 
+
+=NOTE=
+
+Due to Salt Code Up-dates, Encrypted Data (File/ByteStreams) with DS1 Encryption (Ver 1.3) are NOT compatable with prior releases.  
+
+--------------------
+*VERSION INFOMATION*
+--------------------
+Ver1.5
+Optimsed module by David Greenwood, 4MB/sec achieved in Pure VB Code ! New style cipher,
+still includes features of previous cipher but much improved security & speed. CBF techniques are now used in conjunction with CBC techniques to improve the cipher.
+
+Ver1.3
+Optimised module by David Midkiff but re-inforced cipher block chain coding and 
+n level bit-shifting increasing the variance of outputed code. Also strconv added to Key varible in string & file functions to remove unicoding which isserts 0's into the string. This makes the key more secure.
+
+Ver1.2
+
+Optimised Coding by David Midkiff, New Demonstration Project Re-built to include new Optimised Coding. Many thanks to David Midkiff for his additions to the project.
+
+Ver1.1
+
+Salt Coding Up-date: Salt Coding has been improved to increase possible byte outputs from 16,777,216 to
+		     1,078,203,909,375.
+Optimisation:        Salt Coding has been optimised speeding encryption by 200% during encrypt &
+		     decrypt.
+
+Ver1.0
+
+Original Release of Digitally Secure Encryption
